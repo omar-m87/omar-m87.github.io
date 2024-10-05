@@ -215,6 +215,10 @@
                 <label for="message">Message</label>
                 <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
 
+                <!-- reCAPTCHA -->
+                <div class="g-recaptcha" data-sitekey="6LeQo1gqAAAAAFZQIhrhDU0srVx6QLs4UzUeQPzH"></div>
+                <br/>
+
                 <!-- Submit Button -->
                 <button type="submit" class="submit-btn">Submit</button>
 
@@ -243,18 +247,13 @@
     <script src="./resources/contact.js"></script>
 
 <!-- RECAPTCHA -->
-    <form action="?" method="POST">
-        <div id="html_element"></div>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-<script>
-  function onClick(e) {
-    e.preventDefault();
-    grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('6LeQo1gqAAAAAFZQIhrhDU0srVx6QLs4UzUeQPzH', {action: 'LOGIN'});
-    });
-  }
-</script>    </script>
+    <script>
+        function onClick(e) {
+        e.preventDefault();
+        grecaptcha.enterprise.ready(async () => {
+            const token = await grecaptcha.enterprise.execute('6LeQo1gqAAAAAFZQIhrhDU0srVx6QLs4UzUeQPzH', {action: 'LOGIN'});
+        });
+        }
+    </script>  
   </body>
 </html>
