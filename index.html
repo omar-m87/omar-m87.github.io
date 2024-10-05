@@ -1,1 +1,260 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- RECAPTCHA -->
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeQo1gqAAAAAFZQIhrhDU0srVx6QLs4UzUeQPzH"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="desktop-header">
+        <div class="logo">
+            <p class="logo-name"><a href="#">My <em>Portfolio</em></a><span>.</span></p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="first"><a href="#">Home</a></li>
+                <li class="second"><a href="#about">About</a></li>
+                <li class="third"><a href="#projects">Projects</a></li>
+                <li class="fourth"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header id="mobile-header">
+        <div class="logo">
+            <p class="logo-name"><a href="#">My <em>Portfolio</em></a><span>.</span></p>
+        </div>
+        <div class="hamburger-menu">
+            <div class="menu-icon" onclick="myMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#" onclick="myMenu()">Home</a></li>
+                <li><a href="#about" onclick="myMenu()">About</a></li>
+                <li><a href="#projects" onclick="myMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="myMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="pic-container">
+            <img src="./resources/images/profile.jpg" alt="Profile picture">
+        </div>
+        <div class="text-container">
+            <p>Hi, I'm</p>
+            <h1>Omar</h1>
+            <h2><small>Junior </small><span class="typedText">Frontend Developer</span></h2>
+            <div class="btn-container">
+                <button class="btn-projects" onclick="location.href='./index.html#projects'">My Projects</button>
+                <button class="btn-contact" onclick="location.href='./index.html#contact'">Contact Me</button>
+            </div>
+            <div class="social-containers">
+                <a href="https://www.linkedin.com/in/omar-mulè-eit-055a5670" target="_blank"><img src="./resources/images/linkedin.svg" alt="My LinkedIn profile" class="icon">
+                <a href="http://omar-m87.github.io" target="_blank"><img src="./resources/images/github.svg" alt="My GitHub profile" class="icon"></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="title-container">
+            <h2>About <em>Me</em></h2>
+        </div>
+        <div class="section-above">
+            <div class="about-container">
+                <h3>Hi there! My name is Omar and I am a Junior Frontend Developer in New York. I have a background in Math and Engineering, and I am passionate about Web Development.</h3>
+            </div>    
+        </div>
+        <div class="section-below">
+            <div class="exp-container">
+                <div class="exp-title">
+                    <h2>Experience</h2>
+                </div>
+                <div class="exp-text-big-container">
+                    <div class="left-container">
+                        <div class="exp-text">
+                            <div class="exp-text-icon">
+                                <img src="./resources/images/checkbox.svg" alt="checkbox icon" class="icon">
+                            </div>
+                            <div class="exp-text-container">
+                                <h4>HTML</h4>
+                                <p>Experienced</p>
+                            </div>
+                        </div>
+                        <div class="exp-text">
+                            <div class="exp-text-icon">
+                                <img src="./resources/images/checkbox.svg" alt="checkbox icon" class="icon">
+                            </div>
+                            <div class="exp-text-container">
+                                <h4>CSS</h4>
+                                <p>Experienced</p>
+                            </div>
+                        </div>
+                        <div class="exp-text">
+                            <div class="exp-text-icon">
+                                <img src="./resources/images/checkbox.svg" alt="checkbox icon" class="icon">
+                            </div>
+                            <div class="exp-text-container">
+                                <h4>Javascript</h4>
+                                <p>Intermediate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-container">
+                        <div class="exp-text">
+                            <div class="exp-text-icon">
+                                <img src="./resources/images/checkbox.svg" alt="checkbox icon" class="icon">
+                            </div>
+                            <div class="exp-text-container">
+                                <h4>Git</h4>
+                                <p>Basic</p>
+                            </div>
+                        </div>
+                        <div class="exp-text">
+                            <div class="exp-text-icon">
+                                <img src="./resources/images/checkbox.svg" alt="checkbox icon" class="icon">
+                            </div>
+                            <div class="exp-text-container">
+                                <h4>GitHub</h4>
+                                <p>Basic</p>
+                            </div>
+                        </div>
+                        <div class="exp-text">
+                            <div class="exp-text-icon">
+                                <img src="./resources/images/checkbox.svg" alt="checkbox icon" class="icon">
+                            </div>
+                            <div class="exp-text-container">
+                                <h4>Bash</h4>
+                                <p>Basic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <div class="title-container">
+            <h2>Project<em>s</em></h2>
+        </div>
+        <div class="section-below">
+            <div class="project-container one">
+                <div class="pic-container">
+                    <img src="./resources/images/al-fuego.jpeg" alt="Al Fuego">
+                </div>
+                <a class="btn-view-project" href="http://omar-m87.github.io/al-fuego/#" target="_blank">View</a>
+            </div>
+            <div class="project-container two">
+                <div class="pic-container">
+                    <img src="./resources/images/puppies-for-autism.jpeg" alt="Puppies for Autism">
+                </div>
+                <a class="btn-view-project" href="https://omar-m87.github.io/puppies-for-autism/" target="_blank">View</a>
+            </div>
+            <div class="project-container three">
+                <div class="pic-container">
+                    <img src="./resources/images/colmar-academy.jpeg" alt="Colmar Academy">
+                </div>
+                <a class="btn-view-project" href="https://omar-m87.github.io/colmar_academy/" target="_blank">View</a>
+                <h3 class="project-title">PROTOTYPE</h3>
+            </div>
+            <div class="project-container four">
+                <div class="pic-container">
+                    <img src="./resources/images/fotomatic-2.jpeg" alt="Fotomatic">
+                </div>
+                <a class="btn-view-project" href="https://omar-m87.github.io/colmar_academy/" target="_blank">View</a>
+                <h3 class="project-title">PROTOTYPE</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+     <section id="contact">
+        <div class="title-container">
+            <h2>Contact <em>Me</em></h2>
+        </div>
+        <div class="section-below">
+
+            <form id="contact-form">
+                <div class="name-email-section">
+                    <!-- Name -->
+                     <div class="name-section">
+                        <label for="user_name">Full Name</label>
+                        <input type="text" id="user_name" name="user_name" placeholder="Enter your full name" required>
+                    </div>
+                    <!-- Email -->
+                     <div class="email-section">
+                        <label for="user_email">Email</label>
+                        <input type="email" id="user_email" name="user_email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <!-- Message -->
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit</button>
+
+            </form>
+        </div>
+     </section>
+
+     <!-- FOOTER SECTION -->
+    <footer>
+        <div class="copyright">
+            <p>Copyright &#169; 2024. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<!-- TYPED JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!-- SCROLL REVEAL JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- MAIN JS -->
+    <script src="./resources/script.js"></script>
+
+<!-- CONTACT FORM JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./resources/contact.js"></script>
+
+<!-- RECAPTCHA -->
+    <form action="?" method="POST">
+        <div id="html_element"></div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+<script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LeQo1gqAAAAAFZQIhrhDU0srVx6QLs4UzUeQPzH', {action: 'LOGIN'});
+    });
+  }
+</script>    </script>
+  </body>
+</html>
