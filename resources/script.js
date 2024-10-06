@@ -33,15 +33,15 @@ var typingEffect = new Typed(".typedText", {
 
         // PROJECTS
         sr.reveal('.one', {delay: 100})
-        sr.reveal('.two', {delay: 300})
-        sr.reveal('.three', {delay: 500})
-        sr.reveal('.four', {delay: 700})
+        sr.reveal('.two', {delay: 200})
+        sr.reveal('.three', {delay: 300})
+        sr.reveal('.four', {delay: 400})
 
         // CONTACT FORM
         sr.reveal('#contact-form', {delay: 200})
 
         // COPYRIGHT
-        sr.reveal('.copyright', {delay: 700})
+        sr.reveal('.copyright', {delay: 600})
     
 
 // SCROLL REVEAL (LEFT)
@@ -68,7 +68,7 @@ var typingEffect = new Typed(".typedText", {
     })
 
         // ABOUT
-        srRight.reveal('.right-container', {delay: 400})
+        srRight.reveal('.right-container', {delay: 300})
 
         // CONTACT FORM
         srRight.reveal('.email-section', {delay: 200})
@@ -82,7 +82,5 @@ var typingEffect = new Typed(".typedText", {
     })
 
         // CONTACT FORM
-        srDown.reveal('#message', {delay: 500})
-        srDown.reveal('.submit-btn', {delay: 700})
-
-
+        srDown.reveal('#message', {delay: 400})
+        srDown.reveal('.submit-btn', {delay: 500})
