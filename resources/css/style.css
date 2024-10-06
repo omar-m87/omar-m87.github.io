@@ -627,7 +627,6 @@ section {
     font-size: 1.75rem;
     color: var(--bright-1);
     margin-bottom: 2rem;
-    text-align: end;
 }
 
 #hero .text-container h2 span {
@@ -1074,7 +1073,7 @@ section {
     align-items: center;
     justify-content: center;
   }
-  
+
   #projects .pic-container::after {
     display: none;
   }
