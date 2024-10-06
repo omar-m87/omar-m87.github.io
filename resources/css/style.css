@@ -1069,6 +1069,12 @@ section {
 
 /* MEDIA QUERIES (WIDTHS)*/
 @media only screen and (max-width: 1200px) {
+  .logo-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
   #projects .pic-container::after {
     display: none;
   }
@@ -1108,8 +1114,6 @@ section {
     .logo span {
         top: 25px;
     }
-
-
 }
 
 @media only screen and (max-width: 750px) {
