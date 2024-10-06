@@ -17,10 +17,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 
-    <!-- RECAPTCHA -->
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeQo1gqAAAAAFZQIhrhDU0srVx6QLs4UzUeQPzH"></script>
-</head>
-
 <body>
     <!-- HEADER -->
     <header id="desktop-header">
@@ -246,14 +242,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./resources/contact.js"></script>
 
-<!-- RECAPTCHA -->
-    <script>
-        function onClick(e) {
-        e.preventDefault();
-        grecaptcha.enterprise.ready(async () => {
-            const token = await grecaptcha.enterprise.execute('6LeQo1gqAAAAAFZQIhrhDU0srVx6QLs4UzUeQPzH', {action: 'LOGIN'});
-        });
-        }
-    </script>  
   </body>
 </html>
