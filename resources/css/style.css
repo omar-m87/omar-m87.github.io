@@ -569,6 +569,7 @@ section {
     display: flex;
     justify-content: center;
     height: calc(100vh);
+    border: 1px solid red;
 }
 
 #hero .pic-container {
@@ -627,6 +628,7 @@ section {
     font-size: 1.75rem;
     color: var(--bright-1);
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 #hero .text-container h2 span {
@@ -1073,7 +1075,7 @@ section {
     align-items: center;
     justify-content: center;
   }
-
+  
   #projects .pic-container::after {
     display: none;
   }
@@ -1117,6 +1119,10 @@ section {
 
 @media only screen and (max-width: 750px) {
     
+    html {
+      width: 100%;
+    }
+
     #hero {
         flex-direction: column;
     }
