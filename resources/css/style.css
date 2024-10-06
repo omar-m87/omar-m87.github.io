@@ -1076,17 +1076,11 @@ section {
   #projects .btn-view-project {
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.8);
-  }
-
-  #projects .btn-view-project a {
-    color: var(--dark-1);
-  }
-
-  #projects .btn-view-project a:hover {
     color: var(--dark-1);
   }
 
   #projects .btn-view-project:hover {
+    color: var(--dark-1);
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.5);  
     transform: scale(1);
@@ -1282,12 +1276,9 @@ section {
   }
 
   #projects .btn-view-project {
-    padding: 0.8rem 0;
+    padding: 0.8rem 3rem;
   }
 
-  #projects .btn-view-project a {
-    padding: 0.8rem 3rem;
-  }  
 }
 
 @media only screen and (max-height: 580px) {
