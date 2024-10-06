@@ -563,12 +563,13 @@ li a:hover {
 
 section {
     min-height: fit-content;
+    width: 100%;
 }
 
 #hero {
     display: flex;
     justify-content: center;
-    height: calc(100vh);
+    height: 100vh;
 }
 
 #hero .pic-container {
@@ -1099,13 +1100,6 @@ section {
 }
 
 @media only screen and (max-width: 860px) {
-    #desktop-header {
-        display: none;
-    }
-
-    #mobile-header {
-        display: flex;
-    }
     .logo-name {
         display: flex;
         align-items: center;
@@ -1117,6 +1111,27 @@ section {
 }
 
 @media only screen and (max-width: 750px) {
+  html {
+    width: 100%;
+  }
+
+  #hero {
+      flex-direction: column;
+  }
+
+  #hero .pic-container {
+      margin: 0 auto;
+      margin-top: var(--header-height);
+      margin-bottom: 50px;
+  }
+
+  #hero .pic-container img {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 750px) and (orientation: portrait) {
     
     html {
       width: 100%;
@@ -1157,6 +1172,17 @@ section {
     #hero .social-containers {
         padding-left: 0;
     }    
+}
+
+
+@media only screen and (max-width: 610px) {
+      #desktop-header {
+        display: none;
+    }
+
+    #mobile-header {
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 590px) {
@@ -1289,7 +1315,7 @@ section {
 
 }
 
-@media only screen and (max-height: 580px) {
+@media only screen and (max-height: 620px), (max-width: 350px) {
   html {
     font-size: 12px;
   }
@@ -1299,7 +1325,7 @@ section {
   }
 }
 
-@media only screen and (max-height: 580px) and (orientation: landscape) {
+@media only screen and (max-height: 620px) and (orientation: landscape) {
   #hero {
     flex-direction: row;
   }
@@ -1317,7 +1343,7 @@ section {
 
 @media only screen and (max-height: 350px) and (max-width: 860px) {
   :root {
-    --header-height: 40px;
+    --header-height: 50px;
   }
 
   html {
@@ -1329,13 +1355,16 @@ section {
     padding-right: 1.25rem;
   }
 
-
   .logo span {
-    top: 5px;
+    top: 8px;
   }
 
   .logo span:hover {
     top: -8px;
+  }
+
+  #hero {
+    padding-top: 10px;
   }
 
   .left-container .exp-text {
