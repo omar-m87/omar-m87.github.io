@@ -392,8 +392,8 @@ header {
     background-color: transparent;
     color: var(--bright-1);
     transition: all 300ms ease-in;
-    -webkit-animation: flicker-in-1 3s linear both 7s;
-	  animation: flicker-in-1 3s linear both 7s;
+    -webkit-animation: flicker-in-1 3s linear both 6.5s;
+	  animation: flicker-in-1 3s linear both 6.5s;
 
 }
 
@@ -626,8 +626,8 @@ section {
   font-style: normal;
   font-size: 2rem;
   margin-right: 3px;
-  -webkit-animation: flicker-in-1 3s linear both 7s;
-  animation: flicker-in-1 3s linear both 7s;
+  -webkit-animation: flicker-in-1 3s linear both 6.5s;
+  animation: flicker-in-1 3s linear both 6.5s;
 }
 
 #hero .text-container h2 {
